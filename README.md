@@ -48,6 +48,6 @@ The special PC tool can be used to program them <br>
 - 移动TCP可以连接自建服务器
 - 移动UDP可以连接自建服务器
 
-# Server Examples for NB Network Test
+# NB网络服务器例子
 [Server For U1 Network Test](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/server) <br>
 
