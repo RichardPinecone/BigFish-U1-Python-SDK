@@ -41,5 +41,13 @@ The special PC tool can be used to program them <br>
 - CTRL+L is used to enter the pyfile flash mode
 - CTRL+X is used to enter and exit mode to execute the special py file.
 
+# NB运营商限制
+- 电信COAP连接电信服务器
+- 电信TCP可以连接自建服务器
+- 电信UDP不能连接自建服务器
+- 移动TCP可以连接自建服务器
+- 移动UDP可以连接自建服务器
 
+# Server Examples for NB Network Test
+[Server For U1 Network Test](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/server) <br>
 
