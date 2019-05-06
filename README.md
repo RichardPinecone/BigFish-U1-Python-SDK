@@ -1,5 +1,6 @@
 # 1. BigFish-U1-Python
-Based on MicroPython and add BigFish U1 support, and add the following features for U1 product <br>
+Based on MicroPython and Add BigFish U1 support<br>
+The following features are implemented to support BigFish U1 <br>
 
     - GPS class for U1 feature
     - NB class to get SIM card and module information
@@ -8,6 +9,8 @@ Based on MicroPython and add BigFish U1 support, and add the following features 
     - CTRL+X to enter and exit mode which can list and exec the special py file
     - CTRL+L to enter py file flash mode
     - Class help() for function detail description
+    - Mailbox data transfer between AP and SP
+    - Mailbox data transfer between AP and CP
 
 For more information: <br>
 > MicoPython:  www.micropython.com  <br>
@@ -31,14 +34,14 @@ U1 Supports:<br>
 - 40 x GPIO
 
 # 3. Setup Environment based on U1 EVB
-## 3.1 Flash binary files
+## 3.1 Flash Binary Files
 - There are totally 3 binary files: cp.bin, ap.bin and sp.bin. <br>
 - The special PC tool can be used to program them <br>
 [PC tool to Program U1](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) <br>
 ## 3.2 Python Console
 For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be two COM ports in PC<br>
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
-- The UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
+- UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
 
 # 4. Python Boot Sequence
 - After powerup, the internal boot.py and main.py are executed automatically
