@@ -4,8 +4,10 @@ The CTRL+C can be used to interrrupt the pyfile executing and enter REPL mode. <
 # U1 Python Functions
 module "pyb" is used to implement all hardware relevant features <br>
 - micros():     return microseconds after power up<br>
-    > import pyb<br>
-    > print(pyb.micros())<br>
+
+        import pyb
+        print(pyb.micros())
+    
 - millis():     return milliseconds after power up<br>
     > import pyb<br>
     > print(pyb.millis())<br>
