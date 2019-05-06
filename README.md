@@ -35,9 +35,11 @@ U1 Supports:<br>
 
 # 3. Setup Environment based on U1 EVB
 ## 3.1 Flash Binary Files
-- There are totally 3 binary files: cp.bin, ap.bin and sp.bin. <br>
-- The special PC tool can be used to program them <br>
-[PC tool to Program U1](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) <br>
+- Download 3 binary files: cp.bin, ap.bin and sp.bin. <br>
+- Flash them by PC tool <br>
+Using [UnicornEVB.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
+- Connect Python Console<br>
+Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
 ## 3.2 Python Console
 For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be two COM ports in PC<br>
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
