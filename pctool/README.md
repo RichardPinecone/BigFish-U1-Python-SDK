@@ -14,3 +14,8 @@ It can be used to flash U1 CP, SP and AP <br>
 - "CP Download" button is used to download CP file
 - "AP File" button is used to select the AP binary file
 - "AP Download" button is used to download AP file
+
+# Python REPL Console
+Using Putty to connect EVB UART0 port and reset the EVB board, the log will be as following: <br>
+CTRL+C is used to exit main.py and enter REPL mode <br>
+![image](https://github.com/RichardPinecone/BigFish-U1-Python/blob/master/pctool/python_repl.jpg)
