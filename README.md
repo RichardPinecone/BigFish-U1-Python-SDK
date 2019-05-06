@@ -52,9 +52,9 @@ After power reset, there are shall python log information in UART0, such as
     CTRL+C exit main.py
 
 The CTRL+C can be used to interrrupt it and enter REPL mode.<br>
-In REPL mode, you can verify all features refer to [the examples](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/examples)  <br>
-In REPL, help() can be used to list all support modules. <br>
-For more micropython usage, please refer to www.micropython.org <br>
+- In REPL mode, you can verify all features refer to [the examples](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/examples)  <br>
+- In REPL mode, help() can be used to list all support modules. <br>
+- For more micropython usage, please refer to www.micropython.org <br>
 ## 3.3 Python REPL
 What is REPL? REPL is the language shell. Its short for Read, Eval, Print and Loop.<br>
 The process is:<br>
