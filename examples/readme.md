@@ -44,33 +44,31 @@ module "pyb" is used to implement all hardware relevant features <br>
     > pyb.flash_erase(0x30000, "12345")  <br>
 # U1 Python RTC Class<br>
 - class RTC():     system RTC<br>
-    [rtc example: rtc.py](./rtc.py)
-    > import pyb<br>
-    > a=pyb.RTC()<br>
-    > \# set current RTC to 2019/10/1 8:9:20.100 <br>
-    > a.datetime(2019,10,1,8,9,20,100) <br>
-    > \# return currently RTC value<br>
-    > a.datetime()  <br>
-    > \# delay 5 second to call function to output "wakeup test" <br>
-    > def func():<br>
-    > ... print("wakeup test\n") <br>
-    > a.wakeup(5,func) <br>
+    [rtc example: rtc.py](./rtc.py) <br>
 # U1 Python GPS Class<br>
 - class GPS():     system GPS position access
-    > import pyb<br>
-    > a=pyb.GPS()<br>
-    > \# start GPS <br>
-    > a.start()<br>
-    > \# delay 30sec for GPS check <br>
-    > pyb.mdelay(30000)<br>
-    > \# get GPS result <br>
-    > a.value()  <br>
-    > a.stop() <br>
+    [gps example: gps.py](./gps.py) <br>
+# U1 Python NB Class<br>
 - class NB() <br>   system NB modem relevant information
+    [nb example: nb.py](./nb.py) <br>
+# U1 Python NET Class<br>
 - class NET() <br>   system NET network transfer 
+    [net example: net.py](./net.py) <br>
+# U1 Python PWM Class<br>
 - class PWM() <br>   system PWM 
+    [pwm example: pwm.py](./pwm.py) <br>
+# U1 Python TIMER Class<br>
 - class TIMER() <br>   system TIMER
+    [timer example: timer.py](./timer.py) <br>
+# U1 Python SPI Class<br>
 - class SPI() <br>   system SPI
+    [spi example: spi.py](./spi.py) <br>
+# U1 Python I2C Class<br>
 - class I2C() <br>   system I2C
+    [spi example: i2c.py](./i2c.py) <br>
+# U1 Python UART Class<br>
 - class UART() <br>   system UART
+    [uart example: uart.py](./uart.py) <br>
+# U1 Python UART Class<br>
 - class PIN() <br>   system PIN
+    [pin example: pin.py](./pin.py) <br>
