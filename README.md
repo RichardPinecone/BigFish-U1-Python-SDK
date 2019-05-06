@@ -43,7 +43,7 @@ For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
 - UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
 
-After power reset, there are shall python log information in UART0, such as
+After power reset, there is python log information in UART0:
 
     Executing boot.py
     Exit boot.py
@@ -62,7 +62,10 @@ The process is:<br>
 > Eval: evaluate the input.<br>
 > Print: shows the output to the user.<br>
 > Loop: repeat.<br>
+## 3.4 Flash Python file for auto-run
 
+    There is some issue in internal flash, so this feature can not test currently<br>
+    
 # 4. Python Boot Sequence and Special input key
 - After powerup, the internal boot.py and main.py are executed automatically
 - CTRL+C is used to exit the executing py file and enter REPL mode
