@@ -42,6 +42,13 @@ U1 Supports:<br>
 For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be two COM ports in PC<br>
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
 - UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
+## 3.3 Python REPL
+What is REPL? REPL is the language shell. Its short for Read, Eval, Print and Loop.<br>
+The process is:<br>
+> Read: take user input. <br>
+> Eval: evaluate the input.<br>
+> Print: shows the output to the user.<br>
+> Loop: repeat.<br>
 
 # 4. Python Boot Sequence
 - After powerup, the internal boot.py and main.py are executed automatically
@@ -49,13 +56,17 @@ For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be
 - CTRL+L is used to enter the pyfile flash mode
 - CTRL+X is used to enter and exit mode to execute the special py file.
 
-# 5. NB运营商限制
+# 5. 当前限制
+- 目前U1内部Flash更新有问题，所有暂时不能升级内部自动运行的pyfile. <br>
+- 目前仅仅支持REPL模式测试功能 <br>
+
+# 6. NB运营商限制
 - 电信COAP连接电信服务器
 - 电信TCP可以连接自建服务器
 - 电信UDP不能连接自建服务器
 - 移动TCP可以连接自建服务器
 - 移动UDP可以连接自建服务器
 
-# 6. NB网络服务器例子
+# 7. NB网络服务器例子
 [Server For U1 Network Test](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/server) <br>
 
