@@ -46,29 +46,29 @@ module "pyb" is used to implement all hardware relevant features <br>
 - class RTC():     system RTC<br>
     [rtc example: rtc.py](./rtc.py) <br>
 # U1 Python GPS Class<br>
-- class GPS():     system GPS position access
+- class GPS():     system GPS position access<br>
     [gps example: gps.py](./gps.py) <br>
 # U1 Python NB Class<br>
-- class NB() <br>   system NB modem relevant information
+- class NB():     system NB modem relevant information<br>
     [nb example: nb.py](./nb.py) <br>
 # U1 Python NET Class<br>
-- class NET() <br>   system NET network transfer 
+- class NET():     system NET network transfer <br>
     [net example: net.py](./net.py) <br>
 # U1 Python PWM Class<br>
-- class PWM() <br>   system PWM 
+- class PWM():     system PWM <br>
     [pwm example: pwm.py](./pwm.py) <br>
 # U1 Python TIMER Class<br>
-- class TIMER() <br>   system TIMER
+- class TIMER():     system TIMER<br>
     [timer example: timer.py](./timer.py) <br>
 # U1 Python SPI Class<br>
-- class SPI() <br>   system SPI
+- class SPI():     system SPI<br>
     [spi example: spi.py](./spi.py) <br>
 # U1 Python I2C Class<br>
-- class I2C() <br>   system I2C
+- class I2C():    system I2C<br>
     [spi example: i2c.py](./i2c.py) <br>
 # U1 Python UART Class<br>
-- class UART() <br>   system UART
+- class UART():     system UART<br>
     [uart example: uart.py](./uart.py) <br>
 # U1 Python UART Class<br>
-- class PIN() <br>   system PIN
+- class PIN():     system PIN<br>
     [pin example: pin.py](./pin.py) <br>
