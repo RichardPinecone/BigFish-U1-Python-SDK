@@ -21,7 +21,7 @@ U1 supports:
 # Flash BIN files to U1
 There are totally 3 binary files: cp.bin, ap.bin and sp.bin. <br>
 The special PC tool can be used to program them <br>
-[PC tool to Program U1](./pctool/readme.md) <br>
+[PC tool to Program U1](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) <br>
 
 
 
