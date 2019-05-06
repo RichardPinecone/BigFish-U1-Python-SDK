@@ -1,6 +1,8 @@
 # U1 Python Introduction
-After Powerup, the boot.py and main.py will be executed if they exist.<br>
-The CTRL+C can be used to interrrupt the pyfile executing and enter REPL mode. <br>
+- After Powerup, the boot.py and main.py will be executed if they exist.<br>
+- The CTRL+C can be used to interrrupt the pyfile executing and enter REPL mode. <br>
+- For basic python modules, please refer to www.micropython.org <br>
+
 # U1 Python Functions
 module "pyb" is used to implement all hardware relevant features <br>
 - micros():     return microseconds after power up<br>
