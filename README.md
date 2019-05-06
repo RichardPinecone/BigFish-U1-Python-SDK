@@ -21,7 +21,7 @@ BigFish U1 is one NB-IOT SOC, and it contains three Cortex-M4: CP, SP, and AP<br
 > SP is for security and Network(TCP/IP) protocols<br>
 > AP is used for application and currently micropython is running on it.<br>
 
-The hardware Mailbox and Share RAM are used to commnunication between CP/AP and SP/AP.<br>
+The hardware Mailbox and Share RAM are used to data transfer between CP/AP and SP/AP.<br>
 
 U1 Supports:<br>
 - 2M internal flash and 1M RAM.  
@@ -42,6 +42,18 @@ U1 Supports:<br>
 For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be two COM ports in PC<br>
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
 - UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
+
+After power reset, there are shall python log information in UART0, such as
+
+    Executing boot.py
+    Exit boot.py
+    Executing main.py
+    Boot Function ...
+    CTRL+C exit main.py
+
+The CTRL+C can be used to interrrupt it and enter REPL mode.<br>
+In REPL mode, you can verify all functions refer to [the example py files](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/examples)
+
 ## 3.3 Python REPL
 What is REPL? REPL is the language shell. Its short for Read, Eval, Print and Loop.<br>
 The process is:<br>
@@ -50,7 +62,7 @@ The process is:<br>
 > Print: shows the output to the user.<br>
 > Loop: repeat.<br>
 
-# 4. Python Boot Sequence
+# 4. Python Boot Sequence and Special input key
 - After powerup, the internal boot.py and main.py are executed automatically
 - CTRL+C is used to exit the executing py file and enter REPL mode
 - CTRL+L is used to enter the pyfile flash mode
