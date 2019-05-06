@@ -44,6 +44,7 @@ module "pyb" is used to implement all hardware relevant features <br>
     > pyb.flash_erase(0x30000, "12345")  <br>
 # U1 Python RTC Class<br>
 - class RTC():     system RTC<br>
+    [rtc example: rtc.py](./rtc.py)
     > import pyb<br>
     > a=pyb.RTC()<br>
     > \# set current RTC to 2019/10/1 8:9:20.100 <br>
