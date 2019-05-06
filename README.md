@@ -1,13 +1,13 @@
 # BigFish-U1-Python
-Based on MicroPython and add BigFish U1 support, and add the above feature for U1 product <br>
+Based on MicroPython and add BigFish U1 support, and add the following features for U1 product <br>
 
-    Add GPS class for U1 feature
-    Add NB class to get SIM card and module information
-    Add NET class for easy network transfer
-    Add PWM, I2C, SPI, RTC, PIN, UART class for U1 
-    Add CTRL+X to enter and exit mode which can list and exec the special py file
-    Add CTRL+L to enter py file flash mode
-    Add class help() for function detail description
+    - GPS class for U1 feature
+    - NB class to get SIM card and module information
+    - NET class for easy network transfer
+    - PWM, I2C, SPI, RTC, PIN, UART class for U1 
+    - CTRL+X to enter and exit mode which can list and exec the special py file
+    - CTRL+L to enter py file flash mode
+    - Class help() for function detail description
 
 For more information: <br>
 > MicoPython:  www.micropython.com  <br>
