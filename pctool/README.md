@@ -1,3 +1,8 @@
+# U1 EVB Boot Mode and Normal Mode
+> U1 IOMOD pin is ON, and reset board, it will enter bootloader mode<br>
+> U1 IOMOD pin is OFF, and reset board, it will enter normal mode<br>
+![image](https://github.com/RichardPinecone/BigFish-U1-Python/blob/master/pctool/u1_evb.jpg)
+
 # U1 Binary File Program
 This window tool is developed based on .net framework<br>
 It can be used to flash U1 CP, SP and AP <br>
