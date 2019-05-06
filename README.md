@@ -1,2 +1,2 @@
-# micropython
-based on micropython and add bigfish u1 support
+# BigFish-U1-Python
+Based on micropython and add bigfish u1 support
