@@ -19,9 +19,10 @@ U1 supports:
 - 40 x GPIO
 
 # Flash BIN files to U1
-There are totally 3 binary files: cp.bin, ap.bin and sp.bin.
-You can use the IOMOD pin to swith the hardware to bootload mode and use the special PC tools to flash these binary files to U1. 
-After powerup, the UART0 is configured as 9600,8,n,1 and used as python REPL
+There are totally 3 binary files: cp.bin, ap.bin and sp.bin. <br>
+The special PC tool can be used to program them <br>
+[PC tool to Program U1](./pctool/readme.md) <br>
 
-![image](http://github.com/RichardPinecone/BigFish-U1-Python/raw/master/pctool/u1_flash.jpg)
+
+
 
