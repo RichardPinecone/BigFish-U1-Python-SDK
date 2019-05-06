@@ -9,41 +9,61 @@ module "pyb" is used to implement all hardware relevant features <br>
         print(pyb.micros())
     
 - millis():     return milliseconds after power up<br>
-    > import pyb<br>
-    > print(pyb.millis())<br>
+
+        import pyb
+        print(pyb.millis())
+        
 - mdelay(n):     delay milliseconds<br>
-    > import pyb<br>
-    > \# delay 1sec<br>
-    > pyb.mdelay(1000) <br>
+
+        import pyb
+        # delay 1sec
+        pyb.mdelay(1000) 
+        
 - udelay(n):     delay microseconds<br>
-    > import pyb<br>
-    > \# delay 1sec<br>
-    > pyb.udelay(1000000) <br>
+
+        import pyb
+        # delay 1sec
+        pyb.udelay(1000000)
+        
 - disable_interrupt():     disable hardware interrupt<br>
-    > import pyb<br>
-    > pyb.disable_interrupt()<br>
+
+        import pyb
+        pyb.disable_interrupt()
+        
 - enable_interrupt():     enable hardware interrupt<br>
-    > import pyb<br>
-    > pyb.enable_interrupt()<br>
+
+        import pyb
+        pyb.enable_interrupt()
+        
 - wfi():     enter ARM WFI mode<br>
-    > import pyb<br>
-    > pyb.wfi()<br>
+
+        import pyb
+        pyb.wfi()
+        
 - mem_read(m):     read memory<br>
-    > import pyb<br>
-    > \# read address 0xb0030000<br>
-    > print(pyb.mem_read(0xb0030000))  <br>
+
+        import pyb
+        # read address 0xb0030000
+        print(pyb.mem_read(0xb0030000))
+        
 - mem_write(m, v):     write memory<br>
-    > import pyb<br>
-    > \# write 0x11223344 to address 0xb0030000<br>
-    > pyb.mem_read(0xb0030000, 0x11223344)  <br>
+
+        import pyb
+        # write 0x11223344 to address 0xb0030000
+        pyb.mem_read(0xb0030000, 0x11223344)
+        
 - flash_erase(a,s):     erase flash from address "a" to "a + s - 1"<br>
-    > import pyb<br>
-    > \# erase 2K flash from address 0x30000<br>
-    > pyb.flash_erase(0x30000, 2048)  <br>
+
+        import pyb
+        # erase 2K flash from address 0x30000
+        pyb.flash_erase(0x30000, 2048)
+        
 - flash_program(a,b):     program data "b" to flash address "a"<br>
-    > import pyb<br>
-    > \# write "12345" to flash from address 0x30000 <br>
-    > pyb.flash_erase(0x30000, "12345")  <br>
+
+        import pyb
+        # write "12345" to flash from address 0x30000
+        pyb.flash_erase(0x30000, "12345")
+        
 # U1 Python RTC Class<br>
 - class RTC():     system RTC<br>
     [rtc example: rtc.py](./rtc.py) <br>
