@@ -67,13 +67,13 @@ module "pyb" is used to implement all hardware relevant features <br>
         pyb.flash_erase(0x30000, "12345")
         
 # U1 Python RTC Class<br>
-- class RTC():     system RTC<br>
+class RTC():     system RTC<br>
 ## Constructor:
 > class pyb.RTC()<br>
 
 Construct and return RTC object
 ## General Methods
-> RTC.datetime(\[year, month, day, hour, minute, second, millsecond\])<br>
+> RTC.datetime(\[{year, month, day, hour, minute, second, millsecond}\])<br>
 
 Set and Get real time clock<br>
 If no augments, return 7-tuple with the current date and time<br>
