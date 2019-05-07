@@ -68,7 +68,28 @@ module "pyb" is used to implement all hardware relevant features <br>
         
 # U1 Python RTC Class<br>
 - class RTC():     system RTC<br>
-    [rtc example: rtc.py](./rtc.py) <br>
+## Constructor:
+> class pyb.RTC()<br>
+
+Construct and return RTC object
+## General Methods
+> RTC.datetime(\[year, month, day, hour, minute, second, millsecond\])<br>
+
+Set and Get real time clock<br>
+If no augments, return 7-tuple with the current date and time<br>
+
+> RTC.wakeup(delay_ms, callback)<br>
+
+Set RTC wakeup delay, and after "delay_ms", the callback function will be called<br>
+The callback function shall be no augment<br>
+
+> RTC.help()<br>
+
+It will describe all RTC functions in detail<br>
+
+## Examples
+[rtc example: rtc.py](./rtc.py) <br>
+
 # U1 Python GPS Class<br>
 - class GPS():     system GPS position access<br>
     [gps example: gps.py](./gps.py) <br>
