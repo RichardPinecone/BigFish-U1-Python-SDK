@@ -2,7 +2,10 @@
 - After Powerup, the boot.py and main.py will be executed if they exist.<br>
 - The CTRL+C can be used to interrrupt the pyfile executing and enter REPL mode. <br>
 - For basic python modules, please refer to www.micropython.org <br>
-
+# 中断处理函数注意事项
+- 中断处理函数中不能调用和数据传输，延时等相关的接口，因为有中断嵌套和内容管理问题
+- 可以通过全局变量记录中断发生时间，然后在主循环中处理
+- 定义的中断函数的参数数量必须符合要求
 # U1 Python Functions
 module "pyb" is used to implement all hardware relevant features <br>
 - micros():     return microseconds after power up<br>
