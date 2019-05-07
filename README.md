@@ -1,3 +1,10 @@
+# 为何使用python环境
+- Python易学易用，当前最热门的语言 <br>
+- 无需搭建编译环境<br>
+- 快速功能验证和开发，适合行业细分的IOT市场<br>
+- 接口简单，稳定，代码量 < 1% 的C语言<br>
+- 远程升级调试方便<br>
+
 # 1. BigFish-U1-Python
 Based on MicroPython and Add BigFish U1 support<br>
 The following features are implemented to support BigFish U1 <br>
