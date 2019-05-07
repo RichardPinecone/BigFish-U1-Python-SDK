@@ -91,14 +91,92 @@ It will describe all RTC functions in detail<br>
 [rtc example: rtc.py](./rtc.py) <br>
 
 # U1 Python GPS Class<br>
-- class GPS():     system GPS position access<br>
-    [gps example: gps.py](./gps.py) <br>
+class GPS():     system GPS position access<br>
+## Constructor:
+> class pyb.GPS()<br>
+
+Construct and return GPS object
+## General Methods
+> GPS.start()<br>
+
+Enable GPS feature. The NB is disabled automatically when GPS is enabled<br>
+
+> GPS.stop()<br>
+
+Disable GPS feature. The NB is re-enabled automatically when GPS is disabled<br>
+
+> GPS.result()<br>
+
+Get GPS result, return 3-tuple with GPS time, Latitude, Longitude<br>
+If there is not available GPS data, it will return None<br>
+
+> GPS.help()<br>
+
+It will describe all GPS functions in detail<br>
+
+## Examples
+[gps example: gps.py](./gps.py) <br>
 # U1 Python NB Class<br>
-- class NB():     system NB modem relevant information<br>
-    [nb example: nb.py](./nb.py) <br>
+class NB():     system NB modem relevant information<br>
+## Constructor:
+> class pyb.NB()<br>
+
+Construct and return NB object
+## General Methods
+> NB.imei()<br>
+
+Get IMEI of NB module, the return is bytes type<br>
+> NB.iccid()<br>
+
+Get ICCID of SIM card, the return is bytes type<br>
+> NB.help()<br>
+
+It will describe all NB functions in detail<br>
+
+## Examples
+[nb example: nb.py](./nb.py) <br>
 # U1 Python NET Class<br>
-- class NET():     system NET network transfer <br>
-    [net example: net.py](./net.py) <br>
+class NET():     system NET network transfer <br>
+Currently, five network connection channels are supported 
+## Constructor:
+> class pyb.NET(n\[,ipaddress,portnum,udp_mode\])<br>
+
+Usinged network connection channel index to construct and return the relevant NET object. <br>
+- n shall be 0~4.
+- ipaddrss is the IP address of remote server
+- port num is the connnect port number of remote server
+- udp_mode:  0 means TCP connect mode, 1 means UDP connection mode
+## General Methods
+> NET.remote(\[ipaddress,portnum,udp_mode\])<br>
+
+The augments are same as construct.
+> NET.rconn()<br>
+
+Connect the remote server according the construct or remote configure server ip, port and connect mode<br>
+> NET.rsend(data, timeout=n)<br>
+
+Send bytes/string "data" to server. The timeout unit is ms<br>
+> NET.rrecv(num, timeout=n)<br>
+
+Received the "num" bytes from server. The timeout unit is ms<br>
+- If timeout occurs, return None.<br>
+- If the server send data is more than "num" bytes, only "num" bytes are returned, others are discarded<br>
+- If the server send data is less than "num" bytes, all data are returned<br>
+
+> NET.rclose()<br>
+
+Close the connection with the relevant remote server
+
+> NET.tcp_trans(ipaddr, port, data, timeout=n)<br>
+
+Using TCP to transfer data with the special server which ip and port are defined in auguments<br>
+
+> NET.udp_trans(ipaddr, port, data, timeout=n)<br>
+
+Using UDP to transfer data with the special server which ip and port are defined in auguments<br>
+
+## Examples
+[net example: net.py](./net.py) <br>
 # U1 Python PWM Class<br>
 - class PWM():     system PWM <br>
     [pwm example: pwm.py](./pwm.py) <br>
