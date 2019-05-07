@@ -24,9 +24,12 @@ For more information: <br>
 > BigFish:     www.fishsemi.com  <br>
 # 2. BigFish U1 Introduction
 BigFish U1 is one NB-IOT SOC, and it contains three Cortex-M4: CP, SP, and AP<br>
-> CP is used for Modem and NB protocol<br>
-> SP is for security and Network(TCP/IP) protocols<br>
-> AP is used for application and currently micropython is running on it.<br>
+
+| Cortex-M4 | Function | Resource |
+|----|:----:|:-----:|
+|  CP | Modem and NB protocol |  |
+|  SP | Security and Network(TCP/IP) protocol  |  |
+|  AP | Application (micropython) |  |
 
 The hardware Mailbox and Share RAM are used to data transfer between CP/AP and SP/AP.<br>
 
