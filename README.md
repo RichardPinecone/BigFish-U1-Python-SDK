@@ -37,7 +37,7 @@ U1 Supports:<br>
 ## 3.1 Flash Binary Files
 - Download 3 binary files: cp.bin, ap.bin and sp.bin. <br>
 - Flash them by PC tool <br>
-Using [UnicornEVB.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
+Using [BigFishU1Program.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
 - Connect Python Console<br>
 Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
 ## 3.2 Python Console
