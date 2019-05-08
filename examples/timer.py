@@ -10,8 +10,11 @@ def func(timer_channel)
 # set callback function
 a.callback(func)
 
-# set timer period to 500ms, and timer is enabled automatically
-a.period(500)
+# set timer period to 500ms, unit is us, and timer is enabled automatically
+a.period(500000)
+
+# delay 10s
+pyb.mdelay(10000)
 
 # disable timer
 a.disable()
