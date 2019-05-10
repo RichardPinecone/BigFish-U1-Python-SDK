@@ -8,7 +8,7 @@ a.start()
 pyb.mdelay(30000)
 
 # get GPS result 
-a.value()
+print(a.result())
 
 # stop GPS to enable NB again
 a.stop() 
