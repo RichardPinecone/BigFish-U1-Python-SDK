@@ -66,7 +66,7 @@ Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/
 ## Linux工具
 Using minicom
 
-## PowerUp Log In Console
+## Board Power Up
 After power reset, there is python log information in UART0:
 
     Executing boot.py
