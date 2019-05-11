@@ -51,18 +51,21 @@ For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be
 - UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
 
 ## Flash Binary Files
-- Download 3 binary files: cp.bin, ap.bin and sp.bin. <br>
-- Flash them by PC tool <br>
-
+Download 3 binary files: cp.bin, ap.bin and sp.bin, and flash them to EVB board. <br>
 ### Window工具
 Using [BigFishU1Program.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
-- Connect Python Console<br>
-Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
-
 ### Linux工具
 TODO ...
 
 # Python Console
+User can use python console to control and test all features of EVB board
+It also be used to program the final py file for product release.
+## Window工具
+Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
+
+## Linux工具
+Using minicom
+
 ## PowerUp Log In Console
 After power reset, there is python log information in UART0:
 
