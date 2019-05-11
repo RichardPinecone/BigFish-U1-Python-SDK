@@ -9,8 +9,9 @@ BigFish U1 is one NB-IOT SOC, and it contains three Cortex-M4: CP, SP, and AP<br
 
 The hardware Mailbox and Share RAM are used to data transfer between CP/AP and SP/AP.<br>
 
-U1 Supports:<br>
-- 2M internal flash and 1M RAM.  
+U1功能:<br>
+- NB 网络通讯
+- GPS/北斗定位
 - 4 x PWM
 - 2 x SPI
 - 4 x UART
@@ -25,7 +26,7 @@ U1 Supports:<br>
 - 无需搭建编译环境<br>
 - 快速功能验证和开发，适合行业细分的IOT市场<br>
 - 接口简单，稳定，代码量 < 1% 的C语言<br>
-- 远程升级调试方便<br>
+- 基于web的远程开发升级<br>
 
 ## BigFish U1 Python功能描述
 Based on MicroPython and Add BigFish U1 support<br>
