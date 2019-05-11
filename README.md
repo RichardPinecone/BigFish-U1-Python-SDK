@@ -1,27 +1,3 @@
-# 为何使用python环境
-- Python易学易用，当前最热门的语言 <br>
-- 无需搭建编译环境<br>
-- 快速功能验证和开发，适合行业细分的IOT市场<br>
-- 接口简单，稳定，代码量 < 1% 的C语言<br>
-- 远程升级调试方便<br>
-
-# BigFish-U1-Python
-Based on MicroPython and Add BigFish U1 support<br>
-The following features are implemented to support BigFish U1 <br>
-
-    - GPS class for U1 feature
-    - NB class to get SIM card and module information
-    - NET class for easy network transfer
-    - PWM, I2C, SPI, RTC, PIN, UART class for U1 
-    - CTRL+X to enter and exit mode which can list and exec the special py file
-    - CTRL+L to enter py file flash mode
-    - Class help() for function detail description
-    - Mailbox data transfer between AP and SP
-    - Mailbox data transfer between AP and CP
-
-For more information: <br>
-> MicoPython:  www.micropython.com  <br>
-> BigFish:     www.fishsemi.com  <br>
 # BigFish U1 Introduction
 BigFish U1 is one NB-IOT SOC, and it contains three Cortex-M4: CP, SP, and AP<br>
 
@@ -43,18 +19,51 @@ U1 Supports:<br>
 - 1 x RTC
 - 40 x GPIO
 
-# Setup Environment based on U1 EVB
-## Flash Binary Files
-- Download 3 binary files: cp.bin, ap.bin and sp.bin. <br>
-- Flash them by PC tool <br>
-Using [BigFishU1Program.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
-- Connect Python Console<br>
-Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
-## Python Console
+# BigFish U1 Python SDK
+## 为何使用Python环境
+- Python易学易用，当前最热门的语言 <br>
+- 无需搭建编译环境<br>
+- 快速功能验证和开发，适合行业细分的IOT市场<br>
+- 接口简单，稳定，代码量 < 1% 的C语言<br>
+- 远程升级调试方便<br>
+
+## BigFish U1 Python功能描述
+Based on MicroPython and Add BigFish U1 support<br>
+The following features are implemented to support BigFish U1 <br>
+
+    - GPS class for U1 feature
+    - NB class to get SIM card and module information
+    - NET class for easy network transfer
+    - PWM, I2C, SPI, RTC, PIN, UART class for U1 
+    - CTRL+X to enter and exit mode which can list and exec the special py file
+    - CTRL+L to enter py file flash mode
+    - Class help() for function detail description
+    - Mailbox data transfer between AP and SP
+    - Mailbox data transfer between AP and CP
+
+For more information: <br>
+> MicoPython:  www.micropython.com  <br>
+> BigFish:     www.fishsemi.com  <br>
+
+# BigFish U1 EVB上搭建python环境
 For U1 EVB, UART0/1 has been connected to one UART<->USB chip, and there will be two COM ports in PC<br>
 - UART1 is used to binary flash, and shall be 921600, 8, 1, N
 - UART0 of U1 is used as Python Console port, and shall be 9600, 8, 1, N<br>
 
+## Flash Binary Files
+- Download 3 binary files: cp.bin, ap.bin and sp.bin. <br>
+- Flash them by PC tool <br>
+
+### Window工具
+Using [BigFishU1Program.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool)  to Program U1<br>
+- Connect Python Console<br>
+Using [PuTTY_0.67.0.0.exe](https://github.com/RichardPinecone/BigFish-U1-Python/tree/master/pctool) to connect EVB UART0 with 9600,8,1,N.
+
+### Linux工具
+TODO ...
+
+# Python Console
+## PowerUp Log In Console
 After power reset, there is python log information in UART0:
 
     Executing boot.py
@@ -78,7 +87,7 @@ The process is:<br>
 
     There is some issue in internal flash, so this feature can not test currently<br>
     
-# Python Boot Sequence and Special input key
+## Python Boot Sequence and Special input key
 - After powerup, the internal boot.py and main.py are executed automatically
 - CTRL+C is used to exit the executing py file and enter REPL mode
 - CTRL+L is used to enter the pyfile flash mode
